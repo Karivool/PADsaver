@@ -3,7 +3,7 @@ import urllib.request
 def getPic(start, end):
     for picNumber in range(start, end):
         try:
-            urllib.request.urlretrieve('https://storage.googleapis.com/mirubot/padimages/jp/full/' + str(picNumber) + '.png', 'Images/' + str(picNumber) + '.png')
+            urllib.request.urlretrieve('https://f002.backblazeb2.com/file/dadguide-data/media/portraits/' + '0' + str(picNumber) + '.png', 'Images/' + str(picNumber) + '.png')
         except urllib.error.HTTPError:
             print('Image ' + str(picNumber) + ' is missing! :(')
 
